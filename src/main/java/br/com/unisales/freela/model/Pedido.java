@@ -29,7 +29,7 @@ public class Pedido {
     @Column(name = "id_prestador", nullable = false)
     private Usuario prestador;
     @Column(name = "status", nullable = false, length = 20)
-    private String status;
+    private Status status;
     @Column(name = "data_pedido", nullable = false)
     private LocalDateTime dataPedido;
     @Column(name = "data_conclusao", nullable = true)
