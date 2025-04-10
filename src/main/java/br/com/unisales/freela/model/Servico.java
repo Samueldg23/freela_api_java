@@ -31,7 +31,7 @@ public class Servico {
     @Column(name = "valor", nullable = false, precision = 10, scale = 2)
     private BigDecimal valor;
     @Column(name = "id_prestador", nullable = false)
-    private Usuario prestador;
+    private Usuario id_prestador;
 
     public enum Categoria {
         ELETRICISTA,
