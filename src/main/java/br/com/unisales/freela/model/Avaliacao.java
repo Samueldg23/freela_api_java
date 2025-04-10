@@ -1,5 +1,7 @@
 package br.com.unisales.freela.model;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,5 +29,5 @@ public class Avaliacao {
     @Column(name = "id_pedido", nullable = false)
     private Pedido pedido;
     @Column(name = "data_avaliacao", nullable = false)
-    private String dataAvaliacao;
+    private LocalDateTime dataAvaliacao;
 }
