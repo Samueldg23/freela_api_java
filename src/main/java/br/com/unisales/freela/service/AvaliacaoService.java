@@ -32,4 +32,13 @@ public class AvaliacaoService {
 
         return avaliacaoDTO;
     }
+    public AvaliacaoDTO converterParaDTO(Avaliacao avaliacao) {
+        AvaliacaoDTO avaliacaoDTO = new AvaliacaoDTO();
+        avaliacaoDTO.setId(avaliacao.getId());
+        avaliacaoDTO.setId_avaliador(avaliacao.getId_avaliador());
+        avaliacaoDTO.setId_avaliado(avaliacao.getId_avaliado());
+        avaliacaoDTO.setNota(avaliacao.getNota());
+        avaliacaoDTO.setComentario(avaliacao.getComentario());
+
+        return avaliacaoDTO;
 }
